@@ -4,7 +4,8 @@ on:
     types:
       - opened
 jobs:
-  comment:
+  move:
+    permissions: write-all
     runs-on: ubuntu-latest
     steps:
       - run: gh issue transfer $ISSUE rafaelcareerfoundry/issue_archive
